@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:rim="http://www.blackberry.com/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.mobiquest.nandusofferbot" version="2.1.0" android-versionCode="5">
+  <name>NandusOffers</name>
+  <author href="http://www.mloyal.com/" rim:copyright="Copyright 2014 Mobiquest Mobile Technologies">Mobiquest Mobile Technologies</author>
+  <description>NandusOffers App</description>
+  <feature name="http://api.phonegap.com/1.0/network"/>
+  <feature name="http://api.phonegap.com/1.0/file"/>
+  <feature name="http://api.phonegap.com/1.0/camera"/>
+  <feature name="http://api.phonegap.com/1.0/media"/>
+  <feature name="http://api.phonegap.com/1.0/device"/>
+  <feature name="http://api.phonegap.com/1.0/file"/>
+  <feature name="http://api.phonegap.com/1.0/notification"/>
+  <feature name="InAppBrowser">
+    <param name="ios-package" value="CDVInAppBrowser"/>
+  </feature>
+  <feature name="Contacts">
+    <param name="ios-package" value="CDVContacts"/>
+  </feature>
+  <feature name="Geolocation">
+    <param name="ios-package" value="CDVLocation"/>
+  </feature>
+  <feature name="SplashScreen">
+    <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen"/>
+    <param name="onload" value="true"/>
+  </feature>
+  <preference name="phonegap-version" value="cli-11.0.0"/>
+  <preference name="AndroidPersistentFileLocation" value="Compatibility"/>
+  <preference name="SplashScreen" value="screen"/>
+  <preference name="SplashShowOnlyFirstTime" value="false"/>
+  <preference name="LoadingDialog" value="Please wait, the app is loading"/>
+  <preference name="UIWebViewBounce" value="false"/>
+  <!-- all: default means both landscape and portrait are enabled -->
+  <preference name="target-device" value="universal"/>
+  <!-- all: possible values handset, tablet, or universal -->
+  <!-- all: hides the status bar at the top of the screen -->
+  <preference name="android-windowSoftInputMode" value="adjustResize"/>
+  <preference name="webviewbounce" value="false"/>
+  <preference name="prerendered-icon" value="true"/>
+  <preference name="stay-in-webview" value="false"/>
+  <preference name="ios-statusbarstyle" value="black-opaque"/>
+  <preference name="detect-data-types" value="true"/>
+  <preference name="exit-on-suspend" value="false"/>
+  <!-- ios: if set to true, app will terminate when home button is pressed -->
+  <preference name="ShowSplashScreenSpinner" value="true"/>
+  <preference name="AutoHideSplashScreen" value="true"/>
+  <preference name="disable-cursor" value="false"/>
+  <preference name="android-installLocation" value="auto"/>
+  <preference name="StatusBarOverlaysWebView" value="true"/>
+  <preference name="android-targetSdkVersion" value="30"/>
+  <!-- <preference name="android-minSdkVersion" value="24" /> -->
+  <preference name="AndroidInsecureFileModeEnabled" value="true"/>
+  <icon src="icon.png"/>
+  <platform name="android">
+    <icon src="res/icon/android/ldpi.png" density="ldpi"/>
+    <icon src="res/icon/android/mdpi.png" density="mdpi"/>
+    <icon src="res/icon/android/hdpi.png" density="hdpi"/>
+    <icon src="res/icon/android/xhdpi.png" density="xhdpi"/>
+    <preference name="AndroidXEnabled" value="true"/>
+  </platform>
+  <!--<platform name="android">
+    <resource-file src="google-services.json" target="app/google-services.json"/>
+  </platform>
+  <platform name="ios">
+    <resource-file src="GoogleService-Info.plist"/>
+  </platform>-->
+  <platform name="ios">
+    <icon src="res/icon/ios/icon-57.png" width="57" height="57"/>
+    <icon src="res/icon/ios/icon-57-2x.png" width="114" height="114"/>
+    <icon src="res/icon/ios/icon-72.png" width="72" height="72"/>
+    <icon src="res/icon/ios/icon-72-2x.png" width="144" height="144"/>
+    <icon src="res/icon/ios/icon-60.png" width="60" height="60"/>
+    <icon src="res/icon/ios/icon-60-2x.png" width="120" height="120"/>
+    <icon src="res/icon/ios/icon-76.png" width="76" height="76"/>
+    <icon src="res/icon/ios/icon-76-2x.png" width="152" height="152"/>
+    <icon src="res/icon/ios/Icon-Small-40.png" width="40" height="40"/>
+    <icon src="res/icon/ios/iTunesArtwork@2x.png" width="1024" height="1024"/>
+  </platform>
+  <splash src="splash.png"/>
+  <platform name="android">
+    <splash src="res/screen/android/screen-ldpi-portrait.png" density="port-ldpi"/>
+    <splash src="res/screen/android/screen-mdpi-portrait.png" density="port-mdpi"/>
+    <splash src="res/screen/android/screen-hdpi-portrait.png" density="port-hdpi"/>
+    <splash src="res/screen/android/screen-xhdpi-portrait.png" density="port-xhdpi"/>
+    <splash src="res/screen/android/screen-ldpi-landscape.png" density="land-ldpi"/>
+    <splash src="res/screen/android/screen-mdpi-landscape.png" density="land-mdpi"/>
+    <splash src="res/screen/android/screen-hdpi-landscape.png" density="land-hdpi"/>
+    <splash src="res/screen/android/screen-xhdpi-landscape.png" density="land-xhdpi"/>
+  </platform>
+  <platform name="ios">
+    <splash src="res/screen/ios/screen-ipad-landscape.png" width="1024" height="768"/>
+    <splash src="res/screen/ios/screen-ipad-landscape-2x.png" width="2048" height="1496"/>
+    <splash src="res/screen/ios/screen-ipad-portrait.png" width="768" height="1024"/>
+    <splash src="res/screen/ios/screen-ipad-portrait-2x.png" width="1536" height="2008"/>
+    <splash src="res/screen/ios/screen-iphone-landscape.png" width="480" height="320"/>
+    <splash src="res/screen/ios/screen-iphone-landscape-2x.png" width="960" height="640"/>
+    <splash src="res/screen/ios/screen-iphone-portrait.png" width="320" height="480"/>
+    <Splash src="res/screen/ios/screen-iphone-portrait-2x.png" width="640" height="960"/>
+    <splash src="res/screen/ios/Default_iphone5.png" width="640" height="1136"/>
+    <splash src="Default-568h@2x.png" width="640" height="1136"/>
+  </platform>
+  <gap:plugin name="cordova-plugin-inappbrowser" source="npm"/>
+  <!-- <gap:plugin name="cordova-plugin-whitelist" source="npm"/> -->
+  <gap:plugin name="cordova-plugin-device" source="npm"/>
+  <gap:plugin name="cordova-plugin-geolocation" source="npm"/>
+  <!-- <gap:plugin name="cordova-plugin-themeablebrowser" source="npm"/> -->
+  <gap:plugin name="cordova-plugin-network-information" source="npm"/>
+  <gap:plugin name="cordova-plugin-splashscreen" source="npm"/>
+  <gap:plugin name="cordova-plugin-dialogs" source="npm"/>
+  <gap:plugin name="cordova-plugin-file" source="npm"/>
+  <gap:plugin name="cordova-plugin-screen-orientation" source="npm"/>
+  <gap:plugin name="cordova-plugin-file-transfer" source="npm"/>
+  <gap:plugin name="cordova-plugin-android-permissions" source="npm"/>
+  <gap:plugin name="cordova-plugin-camera" spec="2.4.1" source="npm"/>
+  <gap:plugin name="cordova-plugin-media-capture" source="npm"/>
+  <gap:plugin name="cordova-plugin-media" source="npm"/>
+  <!-- <plugin name="phonegap-plugin-push" spec="2.2.3" source="npm" /> -->
+  <!-- <plugin name="@havesource/cordova-plugin-push" spec="3.0.0"/> -->
+  <gap:plugin name="cordova-plugin-x-socialsharing" spec="5.6.8" source="npm"/>
+  <edit-config target="CFBundleShortVersionString" file="*-Info.plist" mode="merge">
+    <string>5</string>
+  </edit-config>
+  <edit-config target="NSCameraUsageDescription" file="*-Info.plist" mode="merge">
+    <string>Camera Access Required</string>
+  </edit-config>
+  <edit-config target="NSPhotoLibraryUsageDescription" file="*-Info.plist" mode="merge">
+    <string>PhotoLibrary Access Required</string>
+  </edit-config>
+  <edit-config target="NSLocationWhenInUseUsageDescription" file="*-Info.plist" mode="merge">
+    <string>Need location access to find things nearby</string>
+  </edit-config>
+  <rim:permissions>
+    <rim:permit>use_camera</rim:permit>
+  </rim:permissions>
+  <content src="index.html"/>
+  <allow-intent href="*"/>
+  <allow-intent href="http://*/*"/>
+  <allow-intent href="https://*/*"/>
+  <allow-intent href="tel:*"/>
+  <!--<allow-intent href="sms:*" />-->
+  <preference name="WindowsStorePublisherName" value="My Name"/>
+  <preference name="WindowsStoreIdentityName" value="887bb711-0186-31bb-9779-2373e9abcb0e"/>
+  <access origin="*"/>
+  <access origin="https://taghash.co/" subdomains="true"/>
+  <access origin="http://180.179.202.114/" subdomains="true"/>
+  <access origin="http://180.179.218.225/" subdomains="true"/>
+  <access origin="http://103.25.128.61/" subdomains="true"/>
+  <!-- <access origin="http://nanduschicken.com/" subdomains="true"/> -->
+  <access origin="https://nanduschicken.mloyalretail.com/" subdomains="true"/>
+  <access origin="http://xceedfbapps.com/" subdomains="true"/>
+  <access origin="http://www.youtube.com/embed/" subdomains="true"/>
+  <access origin="https://www.facebook.com/" subdomains="true"/>
+  <preference name="KeepRunning" value="true"/>
+  <preference name="monaca:AndroidIsPackageNameSeparate" value="false"/>
+  <preference name="DisallowOverscroll" value="true"/>
+  <preference name="Orientation" value="default"/>
+  <preference name="SplashScreenDelay" value="2500"/>
+  <preference name="Fullscreen" value="false"/>
+  <edit-config target="NSPhotoLibraryAddUsageDescription" file="*-Info.plist" mode="merge">
+    <string>Need to photo library access to save pictures there</string>
+  </edit-config>
+  <edit-config target="NSMicrophoneUsageDescription" file="*-Info.plist" mode="merge">
+    <string>Need microphone access to record sounds</string>
+  </edit-config>
+</widget>
